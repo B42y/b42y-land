@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-# Add Sitemap when a verified production domain is set.
+Sitemap: https://b42y.github.io/b42y-land/sitemap.xml
