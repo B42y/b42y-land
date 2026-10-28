@@ -6,7 +6,18 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#f7faff">
   <title>الرابط مش في الحساب | باقي</title>
-  <link rel="icon" href="/b42y-land/assets/favicon.svg" type="image/svg+xml">
+  <script>
+    // GitHub Pages serves this file at arbitrary missing URLs under /b42y-land/.
+    // Local previews and file:// opens use the folder containing 404.html instead.
+    const path = location.pathname;
+    const projectPath = path === '/b42y-land' || path.startsWith('/b42y-land/');
+    const base = document.createElement('base');
+    base.href = location.protocol === 'file:'
+      ? new URL('./', location.href).href
+      : new URL(projectPath ? '/b42y-land/' : '/', location.origin).href;
+    document.head.append(base);
+  </script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -58,8 +69,8 @@
 <body>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="/b42y-land/" aria-label="باقي - الرئيسية"><picture><source media="(max-width: 560px)" srcset="/b42y-land/assets/brand-symbol.png"><img src="/b42y-land/assets/logo-ar.png" width="122" height="60" alt=""></picture></a>
-      <a class="header-home" href="/b42y-land/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>الرئيسية</a>
+      <a class="brand" href="./" aria-label="باقي - الرئيسية"><picture><source media="(max-width: 560px)" srcset="assets/brand-symbol.png"><img src="assets/logo-ar.png" width="122" height="60" alt=""></picture></a>
+      <a class="header-home" href="./"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>الرئيسية</a>
     </div>
   </header>
   <main class="shell">
@@ -68,16 +79,16 @@
       <h1>الصفحة دي <span>مش في الحساب.</span></h1>
       <p class="description">واضح إن الرابط اللي فتحته مش موجود، أو اتنقل لمكان تاني. ولا يهمك، نرجّعك لباقي في خطوة واحدة.</p>
       <div class="actions">
-        <a class="button button-primary" href="/b42y-land/">ارجع للرئيسية <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m7 7-7-7 7-7"/></svg></a>
-        <a class="button button-secondary" href="/b42y-land/#features">اكتشف المميزات</a>
+        <a class="button button-primary" href="./">ارجع للرئيسية <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m7 7-7-7 7-7"/></svg></a>
+        <a class="button button-secondary" href="./#features">اكتشف المميزات</a>
       </div>
       <p class="hint">رمز الخطأ 404 · الصفحة دي بس اللي مش موجودة</p>
     </div>
     <div class="art" role="img" aria-label="رسم توضيحي لدفتر باقي يعرض صفحة مفقودة برمز 404">
       <div class="float-chip chip-one" aria-hidden="true">المسار اتغيّر</div>
       <div class="ledger" aria-hidden="true">
-        <div class="ledger-top"><div class="ledger-title"><img src="/b42y-land/assets/brand-symbol.png" width="34" height="34" alt="">دفتر باقي</div><span class="ledger-tag">NOT FOUND</span></div>
-        <div class="error-number"><span>4</span><span class="zero"><img src="/b42y-land/assets/brand-symbol.png" width="64" height="64" alt=""></span><span>4</span></div>
+        <div class="ledger-top"><div class="ledger-title"><img src="assets/brand-symbol.png" width="34" height="34" alt="">دفتر باقي</div><span class="ledger-tag">NOT FOUND</span></div>
+        <div class="error-number"><span>4</span><span class="zero"><img src="assets/brand-symbol.png" width="64" height="64" alt=""></span><span>4</span></div>
         <p class="ledger-note">الرابط المطلوب خارج الدفتر</p>
         <div class="ledger-row"><span>الصفحة المطلوبة</span><strong class="missing">مش موجودة</strong></div>
         <div class="ledger-row"><span>الطريق الصح</span><strong class="found">الصفحة الرئيسية</strong></div>
@@ -85,6 +96,6 @@
       <div class="float-chip chip-two" aria-hidden="true">نرجّعك للطريق</div>
     </div>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><span>© باقي · Ba2y</span><a href="/b42y-land/en/" lang="en" dir="ltr">English home</a></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><span>© باقي · Ba2y</span><a href="en/" lang="en" dir="ltr">English home</a></div></footer>
 </body>
 </html>
