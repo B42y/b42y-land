@@ -31,6 +31,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
 
 .brand-logo{display:block;width:122px;height:auto}.footer .brand-logo{width:100px}@media(max-width:560px){.brand-logo{width:104px}.footer .brand-logo{width:95px}}
+.brand picture{display:block;line-height:0}
 
 /* Navigation and small-screen refinements */
 .site-header{transition:box-shadow .2s ease,background-color .2s ease}
@@ -72,4 +73,8 @@
   .float-card.payment{inset-inline-end:-10px;transform:rotate(6deg) scale(.72)}
   .float-card.sync{inset-inline-start:-8px;transform:rotate(-5deg) scale(.72)}
   .footer-links{gap:12px 17px}
+}
+@media(max-width:560px){
+  .brand-logo{width:42px;height:42px;object-fit:contain}
+  .footer .brand-logo{width:38px;height:38px}
 }
