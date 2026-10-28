@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Add Sitemap when a verified production domain is set.

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" role="img" aria-label="Ba2y">
+  <path d="M75 12H38C21 12 12 21 12 38V56C12 63 17 68 24 68S36 63 36 56V42C36 38 39 35 43 35H75C82 35 87 30 87 23S82 12 75 12Z" fill="#2563EB"/>
+  <path d="M45 85H65C81 85 90 76 90 60V53C90 45 84 39 76 39S63 45 63 53V59C63 62 61 64 58 64H45C38 64 33 69 33 75S38 85 45 85Z" fill="#36D6B0"/>
+  <circle cx="21" cy="82" r="10" fill="#2563EB"/>
+</svg>
